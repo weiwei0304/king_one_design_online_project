@@ -1,0 +1,68 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg:         rgba(193, 180, 148, 0.9);
+  --color-viewer:     #6CB3AF;
+  --color-sand:       #C1B494;
+  --color-white:      #ffffff;
+  --color-text:       #333333;
+  --color-text-muted: #999999;
+  --color-nav-tab:    rgba(255, 255, 255, 0.85);
+
+  --font-nav:  'Roboto', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+
+  --text-xs:   clamp(11px, 0.7vw, 13px);
+  --text-sm:   clamp(13px, 0.8vw, 15px);
+  --text-base: clamp(14px, 0.9vw, 16px);
+  --text-md:   clamp(16px, 1.1vw, 20px);
+  --text-nav:  24px;
+
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  --nav-height:        54px;
+  --nav-margin-top:    40px;
+  --body-gap:          40px;
+  --window-padding-x:  100px;
+  --window-padding-b:  40px;
+
+  --transition-base: 0.2s ease;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#__nuxt {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-sand); border-radius: 9999px; }
