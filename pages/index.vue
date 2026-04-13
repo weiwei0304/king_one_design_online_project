@@ -49,7 +49,7 @@ const currentProduct = {
 .close-btn {
   position: absolute;
   top: calc(var(--nav-margin-top) + var(--nav-height) / 2);
-  right: 16px;
+  right: var(--space-4);
   transform: translateY(-50%);
   width: 90px;
   height: 90px;
@@ -82,19 +82,19 @@ const currentProduct = {
 
 @media (min-width: 1920px) {
   :root {
-    --nav-margin-top:   60px;
-    --body-gap:         60px;
-    --window-padding-x: 140px;
-    --window-padding-b: 60px;
+    --nav-margin-top:   45px;
+    --body-gap:         36px;
+    --window-padding-x: 90px;
+    --window-padding-b: 45px;
   }
 }
 
 @media (max-width: 1400px) {
   :root {
-    --nav-margin-top:   24px;
-    --body-gap:         24px;
-    --window-padding-x: 60px;
-    --window-padding-b: 24px;
+    --nav-margin-top:   33px;
+    --body-gap:         26px;
+    --window-padding-x: 66px;
+    --window-padding-b: 33px;
   }
 }
 </style>

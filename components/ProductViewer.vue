@@ -59,23 +59,23 @@ const viewBtns = [
 
 .view-controls {
   position: absolute;
-  bottom: 24px;
+  bottom: var(--space-6);
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   width: 471px;
-  height: 54px;
+  height: var(--nav-height);
   max-width: 90%;
 }
 
 .view-btn {
   flex: 1;
-  height: 54px;
+  height: var(--nav-height);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 0 16px;
+  gap: var(--space-2);
+  padding: 0 var(--space-4);
   border: 1.5px solid var(--color-sand);
   cursor: pointer;
   transition: background var(--transition-base);

@@ -31,12 +31,13 @@
   --space-8:  32px;
   --space-10: 40px;
   --space-12: 48px;
+  --space-14: 54px;
 
   --nav-height:        54px;
-  --nav-margin-top:    40px;
-  --body-gap:          40px;
-  --window-padding-x:  100px;
-  --window-padding-b:  40px;
+  --nav-margin-top:    45px;
+  --body-gap:          36px;
+  --window-padding-x:  90px;
+  --window-padding-b:  45px;
 
   --transition-base: 0.2s ease;
 }
