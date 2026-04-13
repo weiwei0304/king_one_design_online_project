@@ -63,14 +63,13 @@ const viewBtns = [
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  width: 471px;
-  height: var(--nav-height);
-  max-width: 90%;
+  width: min(471px, 48%);
+  height: var(--view-btn-height);
 }
 
 .view-btn {
   flex: 1;
-  height: var(--nav-height);
+  height: var(--view-btn-height);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +79,7 @@ const viewBtns = [
   cursor: pointer;
   transition: background var(--transition-base);
   font-family: 'Roboto', sans-serif;
-  font-size: 19.5px;
+  font-size: var(--text-sm);
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0;
@@ -104,8 +103,8 @@ const viewBtns = [
 }
 
 .btn-icon {
-  width: 27px;
-  height: 27px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -116,5 +115,11 @@ const viewBtns = [
 
 .view-btn.is-active .btn-icon {
   filter: brightness(0) invert(1);
+}
+
+@media (max-width: 1400px) {
+  .view-controls {
+    width: min(471px, 58%);
+  }
 }
 </style>
